@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Valu | Crochet con Amor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navegación -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="/img/LOGO.jpg" alt="Logo de Valu" />
+      <span class="span">Valu</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+  <li><a href="#inicio">Inicio</a></li>
+  <li><a href="#productos">Productos</a></li>
+  <li><a href="#contacto">Contacto</a></li>
+  <li><a href="#sobre">Sobre mí</a></li>
+
+</ul>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- Carrusel -->
+  <section class="carrusel" id="inicio">
+    <div class="slide active">
+      <img src="/img/mg2.jpeg" alt="Logo">
+      <div class="texto-slide">
+        <h2>Valu</h2>
+        <p>Arte en crochet, hecho con el alma</p>
+        <a href="#contacto" class="boton">Haz tu pedido</a>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="img/imm2.png" alt="Producto 1">
+      <div class="texto-slide">
+        <h2>Gorritos y muñequitos</h2>
+        <p>Cada puntada tiene una historia</p>
+        <a href="#productos" class="boton">Ver productos</a>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="img/iM1.png" alt="Producto 2">
+      <div class="texto-slide">
+        <h2>Gracias por apoyar lo hecho a mano</h2>
+        <p>¡Tu compra impulsa sueños!</p>
+        <a href="#contacto" class="boton">Contáctanos</a>
+      </div>
+    </div>
+
+       
+    <button class="btn-prev" onclick="cambiarSlide(-1)">⬅️</button>
+    <button class="btn-next" onclick="cambiarSlide(1)">➡️</button>
+      
+    
+
+  </section>
+
+
+
+
+
+
+
+
+  <!-- Productos -->
+
+
+
+    <div>
+     <h2 class="titulo-seccion">Nuestros productos <br>En Crochet</h2>
+   </div>
+
+
+  <section class="productos" id="productos">
+  
+
+
+    
+      <div class="producto" onclick="abrirModal('/img/mg2.jpeg', 'porta mini huevos', 'Hecho a mano, suave y adorable.')">
+        <img src="/img/mg2.jpeg" alt="Muñequito tejido" />
+        <h3>porta mini huevos</h3>
+        <p>Hecho a mano, suave y adorable.</p>
+      </div>
+      <!-- Puedes duplicar este bloque con diferentes imágenes y títulos -->
+       <div class="producto" onclick="abrirModal('/img/mg1.jpeg', 'Conejitos porta huevo de pascuas', ' tiernos y festivos. Perfectos para presentar dulces con encanto y alegría.')">
+        <img src="/img/mg1.jpeg" alt="Llaverito" />
+        <h3>Conejitos porta huevo de pascuas</h3>
+        <p>Perfecto para regalar 💝</p>
+      </div>
+      <!-- Agrega más productos aquí -->
+      
+           <div class="producto" onclick="abrirModal('/img/mg5.jpeg', 'Llaverito koala', 'tierno y delicado. Un acompañante adorable para llevar contigo siempre.')">
+
+         <img src="/img/mg5.jpeg" alt="Llaverito" />
+        <h3>Llaverito koala</h3>
+
+      
+        <p>Perfecto para regalar 💝</p>
+      </div>
+
+
+        <div class="producto" onclick="abrirModal('/img/mg4.jpeg', 'Llaverito Corazón', ' pequeño y encantador. Un detalle ideal para llevar amor contigo a todas partes.')">
+        <img src="/img/mg4.jpeg" alt="Llaverito" />
+        <h3>Llaverito Corazón</h3>
+        <p>Perfecto para regalar 💝</p>
+      </div>
+
+
+
+        <div class="producto" onclick="abrirModal('/img/mg3.jpeg', 'porta mini huevos', ' práctico y adorable. Perfecto para presentar dulces o pequeños detalles con encanto.')">
+        
+         <img src="/img/mg3.jpeg" alt="Llaverito" />
+        <h3>porta mini huevos</h3>
+
+
+
+        
+        <p>Perfecto para regalar 💝</p>
+      </div>
+
+
+        <div class="producto" onclick="abrirModal('/img/mg6.jpeg', 'Munequita girasol reversible', 'dos encantos en uno. Colorida y versátil, perfecta para jugar y decorar.')">
+        <img src="/img/mg6.jpeg" alt="Llaverito" />
+        <h3>Munequita girasol reversible</h3>
+        <p>Perfecto para regalar 💝</p>
+      </div>
+
+        <div class="producto" onclick="abrirModal('/img/mg7.jpeg', 'Escarpines', 'cálidos y suaves para los pies del bebé. Comodidad y ternura en cada puntada.')">
+        <img src="/img/mg7.jpeg" alt="Llaverito" />
+        <h3>Escarpines</h3>
+        <p>Perfecto para regalar 💝</p>
+      </div>
+
+        <div class="producto" onclick="abrirModal('/img/mg8.jpeg', 'Baberito', 'Hecho a mano, suave y adorable.')">
+        <img src="/img/mg8.jpeg" alt="Llaverito" />
+        <h3>Baberito</h3>
+        <p>Perfecto para regalar 💝</p>
+      </div>
+
+       <div class="producto" onclick="abrirModal('/img/imm1.png', 'Conejita dulcera', 'tierna y colorida, ideal para decorar o regalar. Suavidad y encanto en cada detalle.')">
+        <img src="/img/imm1.png" alt="Llaverito" />
+        <h3>Conejita dulcera</h3>
+        <p>Perfecto para regalar 💝</p>
+      </div>
+
+
+       <div class="producto" onclick="abrirModal('/img/mg10.jpeg', 'Ajuar de bebe', 'delicado y suave, ideal para dar comodidad y ternura. Perfecto para un regalo especial.')">
+        <img src="/img/mg10.jpeg" alt="Llaverito" />
+        <h3>Ajuar de bebe</h3>
+        <p>Perfecto para regalar 💝</p>
+      </div>
+
+
+       <div class="producto" onclick="abrirModal('/img/mg13.jpeg', 'Llaverito girasol', 'Un toque de color y alegría para llevar siempre contigo.')">
+        <img src="/img/mg13.jpeg" alt="Llaverito" />
+        <h3>Llaverito girasol </h3>
+        <p>Perfecto para regalar 💝</p>
+      </div>
+
+         <div class="producto" onclick="abrirModal('/img/mg12.jpeg', 'Llaverito', 'flores hechas a medidas.')">
+        <img src="/img/mg12.jpeg" alt="Llaverito" />
+        <h3>Llaverito </h3>
+        <p>Perfecto para regalar 💝</p>
+      </div>
+
+
+         <div class="producto" onclick="abrirModal('/img/mg14.jpeg', 'Mantita osita de apego', 'suave y reconfortante. Ideal para brindar ternura y suavidad al bebé.')">
+        <img src="/img/mg14.jpeg" alt="Llaverito" />
+        <h3>Mantita osita de apego </h3>
+        <p>Perfecto para regalar 💝</p>
+      </div>
+
+
+        <div class="producto" onclick="abrirModal('/img/mg15.jpeg', 'Mandala', 'mandala tiene 25cm de diametro.')">
+        <img src="/img/mg15.jpeg" alt="Llaverito" />
+        <h3>Mandala </h3>
+        <p>Perfecto para regalar 💝</p>
+      </div>
+
+
+        <div class="producto" onclick="abrirModal('/img/im1.jpg', 'Capibara Argentino',' realizado de 15cm hacemos a medida  .')">
+        <img src="/img/im1.jpg" alt="Llaverito" />
+        <h3>Capibara Argentino </h3>
+        <p>Perfecto para regalar 💝</p>
+      </div>
+
+
+       <div class="producto" onclick="abrirModal('/img/mg16.jpeg', 'Mandala', 'mandala hecha a 67cm de diametro.')">
+       
+        <img src="/img/mg16.jpeg" alt="Llaverito" />
+        <h3>Mandala </h3>
+        <p>Perfecto para regalar 💝</p>
+      </div>
+
+
+
+
+        <div class="producto" onclick="abrirModal('/img/mg17.jpeg', 'Mandala', 'amigable y relajado. Un diseño artesanal inspirado en el roedor más querido')">
+       
+        <img src="/img/mg17.jpeg" alt="Llaverito" />
+        <h3>Capibara </h3>
+        <p>Perfecto para regalar 💝</p>
+      </div>
+
+
+       <div class="producto" onclick="abrirModal('/img/mg18.jpeg', 'Mandala', 'delicado y colorido. Un toque artesanal para decorar o regalar con cariño.')">
+       
+        <img src="/img/mg18.jpeg" alt="Llaverito" />
+        <h3>Ramito de flores </h3>
+        <p>Perfecto para regalar 💝</p>
+      </div>
+
+
+       <div class="producto" onclick="abrirModal('/img/mg19.jpeg', 'Mandala', ' Un compañero artesanal inspirado en el roedor más simpático de Sudamérica.')">
+       
+        <img src="/img/mg19.jpeg" alt="Llaverito" />
+        <h3>Capibara </h3>
+        <p>Perfecto para regalar 💝</p>
+      </div>
+
+
+       <div class="producto" onclick="abrirModal('/img/mg20.jpeg', 'Mandala', 'con colores patrios y diseño armonioso. Un símbolo de identidad y belleza artesanal.')">
+       
+        <img src="/img/mg20.jpeg" alt="Llaverito" />
+        <h3>Mandala </h3>
+        <p>Perfecto para regalar 💝</p>
+      </div>
+
+
+
+
+
+
+
+
+    
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="sobre-mi" id="sobre">
+  <div class="contenido-sobre-mi">
+    <img src="/img/LOGO.jpg" alt="Foto de Valu" class="foto-sobre-mi" />
+    <div class="texto-sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>¡Hola! Soy Valu, creadora de este emprendimiento de crochet hecho con mucho amor 💕.</p>
+      <p>Cada puntada cuenta una historia, cada producto está tejido con paciencia y dedicación. Empecé este proyecto como una forma de expresar mi creatividad y compartir un pedacito de alegría en forma de hilo 🧶.</p>
+      <p>Gracias por apoyar lo hecho a mano y ser parte de este sueño 🌷.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+   <section class="medios-pago" 
+   >
+  <h2 class="titulo-seccion">Aceptamos los siguientes medios de pago</h2>
+  <div class="iconos-pago">
+    <img src="/img/uala.svg" alt="MercadoPago" />
+    <img src="/img/visa.png" alt="Visa" />
+    <img src="/img/mastercard.png" alt="Mastercard" />
+    <img src="/img/efec.png" alt="Efectivo" />
+  </div>
+</section>
+
+
+
+
+
+
+   <section  class="contacto" id="contacto">
+      <h2 class="titulo-seccion">Contactanos </h2>
+       <h2>Haz tu pedido o contáctame</h2>
+
+      <p class="mensaje-contacto">
+    ¿Te gustó algún producto? Escríbenos para comprar o encargar el tuyo.  
+    <br />
+    También podemos crear productos personalizados a tu gusto 💡🧶
+  </p>
+
+
+<form class="formulario-contacto" action="https://formsubmit.co/valeriagambarteherbalife@gmail.com" method="POST">
+  <input type="text" name="nombre" placeholder="Tu nombre" required />
+  <input type="email" name="email" placeholder="Tu correo" required />
+  <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+
+  <!-- Opcional: Redirigir a una página de gracias -->
+  <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+
+  <!-- Opcional: Evitar spam -->
+  <input type="text" name="_honey" style="display:none">
+  <input type="hidden" name="_captcha" value="false">
+
+  <button type="submit" class="btn-contacto">Enviar mensaje</button>
+</form>
+
+
+
+
+
+
+
+  <div class="botones-contacto">
+    <a href="https://wa.me/3814462067" target="_blank" class="btn-contacto">📱 WhatsApp</a>
+    <a href="https://instagram.com/" target="_blank" class="btn-contacto">📸 Instagram</a>
+    <a href="https://facebook.com/valeria gambarte" target="_blank" class="btn-contacto">📘 Facebook</a>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+  <!-- Contacto
+  <section class="contacto" id="contacto">
+    <h2>Haz tu pedido o contáctame</h2>
+    <div class="botones-contacto">
+      <a href="https://wa.me/1234567890?text=Hola%2C%20quiero%20hacer%20un%20pedido" class="btn-contacto" target="_blank">📱 WhatsApp</a>
+      <a href="https://instagram.com/tuusuario" class="btn-contacto" target="_blank">📸 Instagram</a>
+      <a href="https://facebook.com/tuusuario" class="btn-contacto" target="_blank">📘 Facebook</a>
+      <a href="mailto:tuemail@email.com" class="btn-contacto">✉️ Correo</a>
+    </div>
+  </section>
+  
+  -->
+
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/3814462067" class="whatsapp-float" target="_blank" title="Habla conmigo por WhatsApp">🟢 WhatsApp</a>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Crochet con Amor - Todos los derechos reservados.
+  </footer>
+
+
+ <div id="modal" class="modal">
+  <span class="cerrar" onclick="cerrarModal()">&times;</span>
+  <img id="modal-imagen" src="" alt="Producto" />
+  <div class="modal-contenido">
+    <h3 id="modal-titulo"></h3>
+    <p id="modal-descripcion"></p>
+    <div class="modal-botones">
+      <a href="https://wa.me/3814462067" target="_blank" rel="noopener">📱 WhatsApp</a>
+       <button id="cerrarModal" class="boton cerrar-modal">❌ volver</button>
+    </div>
+  </div>
+</div>
+
+ 
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
