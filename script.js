@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 let slideIndex = 0;
 const slides = document.querySelectorAll(".slide");
 const navLinks = document.getElementById("navLinks");
